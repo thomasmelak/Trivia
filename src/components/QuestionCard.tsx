@@ -24,6 +24,15 @@ const QuestionCard: React.FC<Props> = ({
       Question: {questionNumber} / {totalQuestions}
     </p>
     <p className="question" dangerouslySetInnerHTML={{ __html: question }} />
+
+    {userAnswer ? (
+      userAnswer.correct ? (
+        <p>Correct! 😊 answer is {userAnswer.correctAnswer}</p>
+      ) : (
+        <p> Incorrect 😭 answer is {userAnswer.correctAnswer}</p>
+      )
+    ) : null}
+
     <div className="answers">
       {answers.map((answer) => (
         <div key={answer}>
