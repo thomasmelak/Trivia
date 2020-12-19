@@ -104,6 +104,14 @@ export const Card = styled.div`
         background-color: rgba(0,0,255, 0.7);
     }
 
+    button.correct{
+        background-color: rgba(0,255,0, 1);
+        color: black;
+    }
+    button.incorrect{
+        background-color: rgba(255,0,0,1);
+        color: white;
+    }
 
 
 `
